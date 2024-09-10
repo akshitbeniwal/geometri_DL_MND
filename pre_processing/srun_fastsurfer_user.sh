@@ -29,11 +29,11 @@ FS_dir="/home/groups/dlmrimnd/akshit/freesurfer_license:/freesurfer_license"
 #   --sd "$outputdir" \
 #   --t1 "$datadir" \
 #   --sid "$sid"
-export TMPDIR="/home/groups/dlmrimnd/akshit/temp"
+export TMPDIR="../../temp"
 singularity exec --nv --no-home \
-                /home/groups/dlmrimnd/akshit/fastsurfer-latest.sif \
+                ../fastsurfer-latest.sif \
                 ./run_fastsurfer.sh \
-                --fs_license /home/groups/dlmrimnd/akshit/freesurfer_license/license.txt \
+                --fs_license ../../freesurfer_license/license.txt \
                 --t1 "$datadir" \
                 --sid "$sid" \
                 --sd "$outputdir" \
