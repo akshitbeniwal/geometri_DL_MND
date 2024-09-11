@@ -1,0 +1,184 @@
+ANOVA for cortical_thickness:
+                 sum_sq     df        F    PR(>F)
+C(diagnosis)  0.190487   12.0  0.43022  0.949558
+Residual      5.940456  161.0      NaN       NaN
+/home/groups/dlmrimnd/akshit/statistic_tests.py:97: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  if anova_table['PR(>F)'][0] < 0.05:
+ANOVA for paracentral:
+                 sum_sq     df         F    PR(>F)
+C(diagnosis)  0.000045   12.0  2.883914  0.001245
+Residual      0.000210  161.0       NaN       NaN
+/home/groups/dlmrimnd/akshit/statistic_tests.py:97: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  if anova_table['PR(>F)'][0] < 0.05:
+
+Significant ANOVA for paracentral. Running pairwise t-tests...
+
+T-test between 1 and 9 for paracentral: t-stat = -0.5379, p-val = 0.5916
+T-test between 1 and 2 for paracentral: t-stat = 4.4602, p-val = 0.0000
+T-test between 1 and 4 for paracentral: t-stat = 0.0576, p-val = 0.9541
+T-test between 1 and 10 for paracentral: t-stat = -0.1898, p-val = 0.8498
+T-test between 1 and 8 for paracentral: t-stat = -0.4302, p-val = 0.6678
+T-test between 1 and 15 for paracentral: t-stat = -0.2760, p-val = 0.7830
+T-test between 1 and 13 for paracentral: t-stat = -2.9484, p-val = 0.0038
+T-test between 1 and 11 for paracentral: t-stat = 0.3759, p-val = 0.7077
+T-test between 1 and 5 for paracentral: t-stat = 0.4926, p-val = 0.6231
+T-test between 1 and 12 for paracentral: t-stat = -1.8133, p-val = 0.0723
+T-test between 1 and 6 for paracentral: t-stat = 0.2068, p-val = 0.8365
+T-test between 1 and 7 for paracentral: t-stat = 0.3432, p-val = 0.7321
+T-test between 9 and 2 for paracentral: t-stat = 2.3883, p-val = 0.0251
+T-test between 9 and 4 for paracentral: t-stat = 0.4279, p-val = 0.6763
+T-test between 9 and 10 for paracentral: t-stat = 0.4215, p-val = 0.7460
+T-test between 9 and 8 for paracentral: t-stat = -0.1098, p-val = 0.9304
+T-test between 9 and 15 for paracentral: t-stat = 0.5700, p-val = 0.6086
+T-test between 9 and 13 for paracentral: t-stat = -5.6759, p-val = 0.1110
+T-test between 9 and 11 for paracentral: t-stat = 1.6720, p-val = 0.3431
+T-test between 9 and 5 for paracentral: t-stat = 0.8626, p-val = 0.4370
+T-test between 9 and 12 for paracentral: t-stat = -3.1669, p-val = 0.1947
+T-test between 9 and 6 for paracentral: t-stat = 1.2982, p-val = 0.4179
+T-test between 9 and 7 for paracentral: t-stat = 1.5997, p-val = 0.3557
+T-test between 2 and 4 for paracentral: t-stat = -2.7684, p-val = 0.0091
+T-test between 2 and 10 for paracentral: t-stat = -1.4532, p-val = 0.1597
+T-test between 2 and 8 for paracentral: t-stat = -1.7570, p-val = 0.0922
+T-test between 2 and 15 for paracentral: t-stat = -2.4236, p-val = 0.0229
+T-test between 2 and 13 for paracentral: t-stat = -4.9391, p-val = 0.0001
+T-test between 2 and 11 for paracentral: t-stat = -0.7384, p-val = 0.4678
+T-test between 2 and 5 for paracentral: t-stat = -1.6514, p-val = 0.1107
+T-test between 2 and 12 for paracentral: t-stat = -3.5048, p-val = 0.0019
+T-test between 2 and 6 for paracentral: t-stat = -0.9521, p-val = 0.3510
+T-test between 2 and 7 for paracentral: t-stat = -0.7797, p-val = 0.4435
+T-test between 4 and 10 for paracentral: t-stat = -0.1573, p-val = 0.8778
+T-test between 4 and 8 for paracentral: t-stat = -0.3394, p-val = 0.7407
+T-test between 4 and 15 for paracentral: t-stat = -0.2329, p-val = 0.8194
+T-test between 4 and 13 for paracentral: t-stat = -2.2472, p-val = 0.0461
+T-test between 4 and 11 for paracentral: t-stat = 0.2713, p-val = 0.7912
+T-test between 4 and 5 for paracentral: t-stat = 0.3318, p-val = 0.7449
+T-test between 4 and 12 for paracentral: t-stat = -1.3873, p-val = 0.1928
+T-test between 4 and 6 for paracentral: t-stat = 0.1432, p-val = 0.8888
+T-test between 4 and 7 for paracentral: t-stat = 0.2465, p-val = 0.8098
+/home/groups/dlmrimnd/akshit/conda_e/gpu/lib/python3.9/site-packages/scipy/stats/_stats_py.py:6951: RuntimeWarning: invalid value encountered in scalar divide
+  svar = ((n1 - 1) * v1 + (n2 - 1) * v2) / df
+T-test between 10 and 8 for paracentral: t-stat = nan, p-val = nan
+T-test between 10 and 15 for paracentral: t-stat = 0.0583, p-val = 0.9588
+T-test between 10 and 13 for paracentral: t-stat = nan, p-val = nan
+T-test between 10 and 11 for paracentral: t-stat = nan, p-val = nan
+T-test between 10 and 5 for paracentral: t-stat = 0.4134, p-val = 0.7071
+T-test between 10 and 12 for paracentral: t-stat = nan, p-val = nan
+T-test between 10 and 6 for paracentral: t-stat = nan, p-val = nan
+T-test between 10 and 7 for paracentral: t-stat = nan, p-val = nan
+T-test between 8 and 15 for paracentral: t-stat = 0.5212, p-val = 0.6542
+T-test between 8 and 13 for paracentral: t-stat = nan, p-val = nan
+T-test between 8 and 11 for paracentral: t-stat = nan, p-val = nan
+T-test between 8 and 5 for paracentral: t-stat = 0.6399, p-val = 0.5678
+T-test between 8 and 12 for paracentral: t-stat = nan, p-val = nan
+T-test between 8 and 6 for paracentral: t-stat = nan, p-val = nan
+T-test between 8 and 7 for paracentral: t-stat = nan, p-val = nan
+T-test between 15 and 13 for paracentral: t-stat = -5.3706, p-val = 0.0330
+T-test between 15 and 11 for paracentral: t-stat = 1.0312, p-val = 0.4108
+T-test between 15 and 5 for paracentral: t-stat = 0.6785, p-val = 0.5276
+T-test between 15 and 12 for paracentral: t-stat = -3.1847, p-val = 0.0861
+T-test between 15 and 6 for paracentral: t-stat = 0.7055, p-val = 0.5536
+T-test between 15 and 7 for paracentral: t-stat = 0.9682, p-val = 0.4351
+T-test between 13 and 11 for paracentral: t-stat = nan, p-val = nan
+T-test between 13 and 5 for paracentral: t-stat = 3.0121, p-val = 0.0571
+T-test between 13 and 12 for paracentral: t-stat = nan, p-val = nan
+T-test between 13 and 6 for paracentral: t-stat = nan, p-val = nan
+T-test between 13 and 7 for paracentral: t-stat = nan, p-val = nan
+T-test between 11 and 5 for paracentral: t-stat = -0.1195, p-val = 0.9124
+T-test between 11 and 12 for paracentral: t-stat = nan, p-val = nan
+T-test between 11 and 6 for paracentral: t-stat = nan, p-val = nan
+T-test between 11 and 7 for paracentral: t-stat = nan, p-val = nan
+T-test between 5 and 12 for paracentral: t-stat = -1.9428, p-val = 0.1473
+T-test between 5 and 6 for paracentral: t-stat = -0.0398, p-val = 0.9707
+T-test between 5 and 7 for paracentral: t-stat = 0.0887, p-val = 0.9349
+T-test between 12 and 6 for paracentral: t-stat = nan, p-val = nan
+T-test between 12 and 7 for paracentral: t-stat = nan, p-val = nan
+T-test between 6 and 7 for paracentral: t-stat = nan, p-val = nan
+ANOVA for precentral:
+                 sum_sq     df         F    PR(>F)
+C(diagnosis)  0.000542   12.0  3.575592  0.000098
+Residual      0.002035  161.0       NaN       NaN
+/home/groups/dlmrimnd/akshit/statistic_tests.py:97: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  if anova_table['PR(>F)'][0] < 0.05:
+
+Significant ANOVA for precentral. Running pairwise t-tests...
+
+T-test between 1 and 9 for precentral: t-stat = -0.2405, p-val = 0.8104
+T-test between 1 and 2 for precentral: t-stat = 4.9985, p-val = 0.0000
+T-test between 1 and 4 for precentral: t-stat = 0.9156, p-val = 0.3615
+T-test between 1 and 10 for precentral: t-stat = 0.4423, p-val = 0.6591
+T-test between 1 and 8 for precentral: t-stat = 0.3543, p-val = 0.7237
+T-test between 1 and 15 for precentral: t-stat = -0.2517, p-val = 0.8017
+T-test between 1 and 13 for precentral: t-stat = -3.3768, p-val = 0.0010
+T-test between 1 and 11 for precentral: t-stat = -0.5039, p-val = 0.6152
+T-test between 1 and 5 for precentral: t-stat = 0.3946, p-val = 0.6938
+T-test between 1 and 12 for precentral: t-stat = -2.2625, p-val = 0.0254
+T-test between 1 and 6 for precentral: t-stat = -0.2188, p-val = 0.8272
+T-test between 1 and 7 for precentral: t-stat = 1.2208, p-val = 0.2245
+T-test between 9 and 2 for precentral: t-stat = 2.2947, p-val = 0.0308
+T-test between 9 and 4 for precentral: t-stat = 0.3809, p-val = 0.7099
+T-test between 9 and 10 for precentral: t-stat = 1.9676, p-val = 0.2994
+T-test between 9 and 8 for precentral: t-stat = 1.6850, p-val = 0.3410
+T-test between 9 and 15 for precentral: t-stat = 0.0772, p-val = 0.9434
+T-test between 9 and 13 for precentral: t-stat = -10.3041, p-val = 0.0616
+T-test between 9 and 11 for precentral: t-stat = -1.0727, p-val = 0.4777
+T-test between 9 and 5 for precentral: t-stat = 0.8189, p-val = 0.4588
+T-test between 9 and 12 for precentral: t-stat = -6.7237, p-val = 0.0940
+T-test between 9 and 6 for precentral: t-stat = -0.1565, p-val = 0.9012
+T-test between 9 and 7 for precentral: t-stat = 4.4692, p-val = 0.1401
+T-test between 2 and 4 for precentral: t-stat = -1.9379, p-val = 0.0610
+T-test between 2 and 10 for precentral: t-stat = -0.8237, p-val = 0.4186
+T-test between 2 and 8 for precentral: t-stat = -0.9386, p-val = 0.3577
+T-test between 2 and 15 for precentral: t-stat = -2.7343, p-val = 0.0113
+T-test between 2 and 13 for precentral: t-stat = -5.8151, p-val = 0.0000
+T-test between 2 and 11 for precentral: t-stat = -2.0603, p-val = 0.0509
+T-test between 2 and 5 for precentral: t-stat = -2.2112, p-val = 0.0360
+T-test between 2 and 12 for precentral: t-stat = -4.3587, p-val = 0.0002
+T-test between 2 and 6 for precentral: t-stat = -1.6876, p-val = 0.1050
+T-test between 2 and 7 for precentral: t-stat = 0.1938, p-val = 0.8480
+T-test between 4 and 10 for precentral: t-stat = 0.0840, p-val = 0.9345
+T-test between 4 and 8 for precentral: t-stat = 0.0335, p-val = 0.9739
+T-test between 4 and 15 for precentral: t-stat = -0.4427, p-val = 0.6653
+T-test between 4 and 13 for precentral: t-stat = -2.1110, p-val = 0.0585
+T-test between 4 and 11 for precentral: t-stat = -0.4598, p-val = 0.6546
+T-test between 4 and 5 for precentral: t-stat = -0.1127, p-val = 0.9119
+T-test between 4 and 12 for precentral: t-stat = -1.4706, p-val = 0.1694
+T-test between 4 and 6 for precentral: t-stat = -0.2959, p-val = 0.7728
+T-test between 4 and 7 for precentral: t-stat = 0.5315, p-val = 0.6056
+/home/groups/dlmrimnd/akshit/conda_e/gpu/lib/python3.9/site-packages/scipy/stats/_stats_py.py:6951: RuntimeWarning: invalid value encountered in scalar divide
+  svar = ((n1 - 1) * v1 + (n2 - 1) * v2) / df
+T-test between 10 and 8 for precentral: t-stat = nan, p-val = nan
+T-test between 10 and 15 for precentral: t-stat = -1.3122, p-val = 0.3198
+T-test between 10 and 13 for precentral: t-stat = nan, p-val = nan
+T-test between 10 and 11 for precentral: t-stat = nan, p-val = nan
+T-test between 10 and 5 for precentral: t-stat = -0.3758, p-val = 0.7321
+T-test between 10 and 12 for precentral: t-stat = nan, p-val = nan
+T-test between 10 and 6 for precentral: t-stat = nan, p-val = nan
+T-test between 10 and 7 for precentral: t-stat = nan, p-val = nan
+T-test between 8 and 15 for precentral: t-stat = -1.1159, p-val = 0.3806
+T-test between 8 and 13 for precentral: t-stat = nan, p-val = nan
+T-test between 8 and 11 for precentral: t-stat = nan, p-val = nan
+T-test between 8 and 5 for precentral: t-stat = -0.2405, p-val = 0.8255
+T-test between 8 and 12 for precentral: t-stat = nan, p-val = nan
+T-test between 8 and 6 for precentral: t-stat = nan, p-val = nan
+T-test between 8 and 7 for precentral: t-stat = nan, p-val = nan
+T-test between 15 and 13 for precentral: t-stat = -7.2146, p-val = 0.0187
+T-test between 15 and 11 for precentral: t-stat = -0.8003, p-val = 0.5075
+T-test between 15 and 5 for precentral: t-stat = 0.8774, p-val = 0.4204
+T-test between 15 and 12 for precentral: t-stat = -4.7268, p-val = 0.0420
+T-test between 15 and 6 for precentral: t-stat = -0.1636, p-val = 0.8851
+T-test between 15 and 7 for precentral: t-stat = 3.0504, p-val = 0.0928
+T-test between 13 and 11 for precentral: t-stat = nan, p-val = nan
+T-test between 13 and 5 for precentral: t-stat = 5.5019, p-val = 0.0118
+T-test between 13 and 12 for precentral: t-stat = nan, p-val = nan
+T-test between 13 and 6 for precentral: t-stat = nan, p-val = nan
+T-test between 13 and 7 for precentral: t-stat = nan, p-val = nan
+T-test between 11 and 5 for precentral: t-stat = 1.0804, p-val = 0.3591
+T-test between 11 and 12 for precentral: t-stat = nan, p-val = nan
+T-test between 11 and 6 for precentral: t-stat = nan, p-val = nan
+T-test between 11 and 7 for precentral: t-stat = nan, p-val = nan
+T-test between 5 and 12 for precentral: t-stat = -3.7870, p-val = 0.0323
+T-test between 5 and 6 for precentral: t-stat = -0.6415, p-val = 0.5668
+T-test between 5 and 7 for precentral: t-stat = 1.5740, p-val = 0.2136
+T-test between 12 and 6 for precentral: t-stat = nan, p-val = nan
+T-test between 12 and 7 for precentral: t-stat = nan, p-val = nan
+T-test between 6 and 7 for precentral: t-stat = nan, p-val = nan
